@@ -75,6 +75,11 @@ const Button = styled.button`
   font-style: 20px;
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: teal;
+    color: white;
+  }
 `;
 
 const Slider = () => {
@@ -97,7 +102,7 @@ const Slider = () => {
             <ImgContainer>
               <Image src={item.img} />
             </ImgContainer>
-            <InfoContainer> 
+            <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
               <Button>SHOP NOW</Button>
