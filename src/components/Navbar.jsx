@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 60px;
+  border-bottom: 1px solid teal;
 `;
 
 const Wrapper = styled.div`
@@ -70,7 +71,7 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input></Input>
-            <Search style={{color: "gray",  fontSize: 16}}></Search>
+            <Search style={{ color: "gray", fontSize: 16 }}></Search>
           </SearchContainer>
         </Left>
         <Center>
