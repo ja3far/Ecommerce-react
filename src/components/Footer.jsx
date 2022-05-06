@@ -8,11 +8,13 @@ import {
   Pinterest,
   Twitter,
 } from "@material-ui/icons";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   /* height: 30vh; */
   display: flex;
   background-color: #f5fbfd;
+  ${mobile({ flexDirection: "column" })};
 `;
 
 const Left = styled.div`
@@ -56,6 +58,7 @@ const Center = styled.div`
   display: flex;
   padding: 20px;
   flex-direction: column;
+  ${mobile({ display: "none" })};
 `;
 
 const Title = styled.h3`
@@ -78,6 +81,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ backgroundColor: "#fcf5f5" })};
 `;
 
 const ContactItem = styled.div`

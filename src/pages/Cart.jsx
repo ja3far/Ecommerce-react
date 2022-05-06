@@ -4,11 +4,13 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 20px;
+  ${mobile({ padding: "10px" })};
 `;
 
 const Title = styled.h1`
@@ -21,6 +23,7 @@ const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  ${mobile({ padding: "10px" })};
 `;
 
 const TopButton = styled.button`
@@ -33,7 +36,9 @@ const TopButton = styled.button`
   border: ${(props) => props.border === "filled" && "none"};
 `;
 
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+  ${mobile({ display: "none" })};
+`;
 
 const TopText = styled.span`
   text-decoration: underline;
@@ -44,6 +49,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({ flexDirection: "column" })};
 `;
 
 const Info = styled.div`
@@ -61,6 +67,7 @@ const Product = styled.div`
 const ProductDetail = styled.div`
   flex: 2;
   display: flex;
+  ${mobile({ flexDirection: "column" })};
 `;
 
 const Image = styled.img`
