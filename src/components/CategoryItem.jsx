@@ -47,15 +47,15 @@ const Button = styled.button`
 `;
 
 const CategoryItem = ({ item }) => {
-  return (
-    <Container>
-      <Image src={item.img}></Image>
-      <Info>
-        <Title>{item.title}</Title>
-        <Button>SHOP NOW</Button>
-      </Info>
-    </Container>
-  );
+    return (
+        <Container>
+            <Image src={item.img}></Image>
+            <Info>
+                <Title>{item.title}</Title>
+                <Button>SHOP NOW</Button>
+            </Info>
+        </Container>
+    );
 };
 
 export default CategoryItem;

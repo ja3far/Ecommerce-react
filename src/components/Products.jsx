@@ -10,13 +10,13 @@ const Container = styled.div`
 `;
 
 const Products = () => {
-  return (
-    <Container>
-      {popularProducts.map((item) => (
-        <Product key={item.id} item={item}></Product>
-      ))}
-    </Container>
-  );
+    return (
+        <Container>
+            {popularProducts.map((item) => (
+                <Product key={item.id} item={item}></Product>
+            ))}
+        </Container>
+    );
 };
 
 export default Products;

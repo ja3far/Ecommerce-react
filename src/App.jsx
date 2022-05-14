@@ -6,12 +6,12 @@ import Home from "./pages/Home";
 // import Cart from "./pages/Cart";
 
 const App = () => {
-  return <Home />;
-  // return <ProductList />;
-  // return <Product />;
-  // return <Register />;
-  // return <Login />;
-  // return <Cart />;
+    return <Home />;
+    // return <ProductList />;
+    // return <Product />;
+    // return <Register />;
+    // return <Login />;
+    // return <Cart />;
 };
 
 export default App;

@@ -11,13 +11,13 @@ const Container = styled.div`
 `;
 
 const Categories = () => {
-  return (
-    <Container>
-      {categories.map((item) => (
-        <CategoryItem key={item.id} item={item}></CategoryItem>
-      ))}
-    </Container>
-  );
+    return (
+        <Container>
+            {categories.map((item) => (
+                <CategoryItem key={item.id} item={item}></CategoryItem>
+            ))}
+        </Container>
+    );
 };
 
 export default Categories;

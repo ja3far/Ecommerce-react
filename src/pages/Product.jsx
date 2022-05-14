@@ -88,7 +88,7 @@ const AddContainer = styled.div`
     padding: "10px",
     width: "100%",
     margin: "10px 0px",
-  })};
+})};
 `;
 
 const AmountContainer = styled.div`
@@ -123,58 +123,58 @@ const Button = styled.button`
 `;
 
 const Product = () => {
-  return (
-    <Container>
-      <Announcement />
-      <Navbar />
+    return (
+        <Container>
+            <Announcement />
+            <Navbar />
 
-      <Wrapper>
-        <ImgContainer>
-          <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
-        </ImgContainer>
-        <InfoContainer>
-          <Title>Great Product!</Title>
-          <Description>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </Description>
-          <Price>$ 20</Price>
-          <FilterContainer>
-            <Filter>
-              <FilterTitle>Color</FilterTitle>
-              <FilterColor color="black"></FilterColor>
-              <FilterColor color="darkblue"></FilterColor>
-              <FilterColor color="gray"></FilterColor>
-            </Filter>
-            <Filter>
-              <FilterTitle>Size</FilterTitle>
-              <FilterSize>
-                <FilterSizeOption>XS</FilterSizeOption>
-                <FilterSizeOption>S</FilterSizeOption>
-                <FilterSizeOption>M</FilterSizeOption>
-                <FilterSizeOption>L</FilterSizeOption>
-                <FilterSizeOption>XL</FilterSizeOption>
-                <FilterSizeOption>XXL</FilterSizeOption>
-              </FilterSize>
-            </Filter>
-          </FilterContainer>
-          <AddContainer>
-            <AmountContainer>
-              <Remove />
-              <Amount>1</Amount>
-              <Add />
-            </AmountContainer>
-            <Button>ADD TO CART</Button>
-          </AddContainer>
-        </InfoContainer>
-      </Wrapper>
+            <Wrapper>
+                <ImgContainer>
+                    <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+                </ImgContainer>
+                <InfoContainer>
+                    <Title>Great Product!</Title>
+                    <Description>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </Description>
+                    <Price>$ 20</Price>
+                    <FilterContainer>
+                        <Filter>
+                            <FilterTitle>Color</FilterTitle>
+                            <FilterColor color="black"></FilterColor>
+                            <FilterColor color="darkblue"></FilterColor>
+                            <FilterColor color="gray"></FilterColor>
+                        </Filter>
+                        <Filter>
+                            <FilterTitle>Size</FilterTitle>
+                            <FilterSize>
+                                <FilterSizeOption>XS</FilterSizeOption>
+                                <FilterSizeOption>S</FilterSizeOption>
+                                <FilterSizeOption>M</FilterSizeOption>
+                                <FilterSizeOption>L</FilterSizeOption>
+                                <FilterSizeOption>XL</FilterSizeOption>
+                                <FilterSizeOption>XXL</FilterSizeOption>
+                            </FilterSize>
+                        </Filter>
+                    </FilterContainer>
+                    <AddContainer>
+                        <AmountContainer>
+                            <Remove />
+                            <Amount>1</Amount>
+                            <Add />
+                        </AmountContainer>
+                        <Button>ADD TO CART</Button>
+                    </AddContainer>
+                </InfoContainer>
+            </Wrapper>
 
-      <Newsletter />
-      <Footer />
-    </Container>
-  );
+            <Newsletter />
+            <Footer />
+        </Container>
+    );
 };
 
 export default Product;
